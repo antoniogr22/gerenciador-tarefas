@@ -1,0 +1,27 @@
+package model;
+
+public class tarefas_tags {
+    private int tarefa_id; 
+    private int tag_id;    
+
+    public tarefas_tags(int tarefa_id, int tag_id) {
+        this.tarefa_id = tarefa_id;
+        this.tag_id = tag_id;
+    }
+
+    public int gettarefa_id() {
+        return tarefa_id;
+    }
+
+    public void settarefa_id(int tarefa_id) {
+        this.tarefa_id = tarefa_id;
+    }
+
+    public int gettag_id() {
+        return tag_id;
+    }
+
+    public void settag_id(int tag_id) {
+        this.tag_id = tag_id;
+    }
+}
