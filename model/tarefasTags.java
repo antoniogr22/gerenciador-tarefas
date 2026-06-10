@@ -1,10 +1,10 @@
 package model;
 
-public class tarefas_tags {
+public class tarefasTags {
     private int tarefa_id; 
     private int tag_id;    
 
-    public tarefas_tags(int tarefa_id, int tag_id) {
+    public tarefasTags(int tarefa_id, int tag_id) {
         this.tarefa_id = tarefa_id;
         this.tag_id = tag_id;
     }

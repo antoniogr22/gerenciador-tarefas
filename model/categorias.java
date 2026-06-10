@@ -2,12 +2,13 @@ package model;
 
 public class categorias {
     private int id;
-    private int usuario_id; 
     private String nome;
 
-    public categorias(int id, int usuario_id, String nome) {
+    public categorias() {
+    }
+
+    public categorias(int id, String nome) {
         this.id = id;
-        this.usuario_id = usuario_id;
         this.nome = nome;
     }
 
@@ -17,14 +18,6 @@ public class categorias {
 
     public void setid(int id) {
         this.id = id;
-    }
-
-    public int getusuario_id() {
-        return usuario_id;
-    }
-
-    public void setusuario_id(int usuario_id) {
-        this.usuario_id = usuario_id;
     }
 
     public String getnome() {

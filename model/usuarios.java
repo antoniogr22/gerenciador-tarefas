@@ -27,12 +27,11 @@ public class usuarios {
         this.usuario = usuario;
     }
 
-    public String getidsenha() {
+    public String getsenha() {
         return senha;
     }
 
     public void setsenha(String senha) {
         this.senha = senha;
     }
-
 }
