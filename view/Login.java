@@ -98,7 +98,7 @@ public class Login extends JFrame {
 
         getRootPane().setDefaultButton(btnEntrar);
 
-        // === AÇÃO DO BOTÃO ENTRAR (Adicionada e corrigida) ===
+        
         btnEntrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -115,8 +115,8 @@ public class Login extends JFrame {
                     usuarios usuarioLogado = uDAO.fazerLogin(txtUsuario, txtSenha);
 
                     if (usuarioLogado != null) {
-                        dispose(); // Fecha a tela de Login
-                        new cadastro(usuarioLogado.getid_usuario()); // Abre a tela de cadastro passando o ID
+                        dispose(); 
+                        new cadastro(usuarioLogado.getid_usuario());
                     } else {
                         JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro de Autenticação", JOptionPane.ERROR_MESSAGE);
                     }
